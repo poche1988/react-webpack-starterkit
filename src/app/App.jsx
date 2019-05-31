@@ -4,7 +4,7 @@ export class App extends React.Component {
 	render() {
 		return (
 			<div>
-				<h1>React Webpack Starterkit</h1>
+				<h1>React Webpack Change</h1>
 			</div>
 		);
 	}
