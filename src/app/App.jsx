@@ -3,9 +3,9 @@ import React from 'react';
 export class App extends React.Component {
 	render() {
 		return (
-			<div>
-				<h1>React Webpack Change</h1>
-			</div>
+			<main class="container">
+			<h1>hello world</h1>
+			</main>
 		);
 	}
 }
