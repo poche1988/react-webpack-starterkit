@@ -1,10 +1,10 @@
 import React from 'react';
-
+import Players from '../Components/players'
 export class App extends React.Component {
 	render() {
 		return (
 			<main class="container">
-			<h1>hello world</h1>
+				<Players />
 			</main>
 		);
 	}
