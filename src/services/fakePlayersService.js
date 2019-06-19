@@ -32,22 +32,6 @@ const players = [
     height: 1.78,
     position: "Defensive Midfielder",
     birthDate: "1989-01-03T19:04:28.809Z"
-  },
-  {
-    id: "5b21ca3eeb7f6fbccd471816",
-    name: "Eduardo Amado",
-    team: { id: "5b21ca3eeb7f6fbccd471818", name: "Newells" },
-    height: 1.95,
-    position: "Centre Midfielder",
-    birthDate: "1949-01-03T19:04:28.809Z"
-  },
-  {
-    id: "5b21ca3eeb7f6fbccd471817",
-    name: "Leo Villa",
-    team: { id: "5b21ca3eeb7f6fbccd471814", name: "River Plate" },
-    height: 1.77,
-    position: "Playmaker",
-    birthDate: "1985-01-03T19:04:28.809Z"
   }
 ];
 
