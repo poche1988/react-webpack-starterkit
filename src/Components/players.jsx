@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
 import { getPlayers } from '../services/fakePlayersService'
+import Pagination from '../Common/Pagination';
+
 class Players extends Component {
     state = {
-        players: getPlayers()
+        players: getPlayers(),
+        pageSize: 4,
+        currentPage: 1
     }
 
     handleDelete = (player) => {
@@ -10,8 +14,13 @@ class Players extends Component {
         this.setState({ players })
     }
 
+    handlePageChange = page => {
+        this.setState({ currentPage: page });
+    }
+
     render() {
         const { length : count } = this.state.players;
+        const { pageSize, currentPage } = this.state;
 
         if (count === 0)
             return <p>No hay jugadores</p>;
@@ -43,6 +52,11 @@ class Players extends Component {
                         ))}
                     </tbody>
                 </table>  
+                <Pagination itemsCount={count} 
+                pageSize={pageSize} 
+                currentPage = {currentPage}
+                onPageChange={this.handlePageChange}
+                />
             </React.Fragment>
             
         )
